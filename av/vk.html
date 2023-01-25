@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.5">
@@ -12,32 +14,33 @@
     <title>Kahveci - Avukatlarımız</title>
 </head>
 <body style="margin: 0; background-color: white;">
-    <nav>
-        <a href="/"><img src="/Images/kahveciblack.png" style="max-height: 2vh; width: auto;"></a>
-        <a class="navbutton" href="avukatlar.html" style="color: rgb(15, 196, 196);">Avukatlarımız</a>
-        <a class="navbutton" href="https://kahvecimicromoon.wordpress.com">Makaleler</a>
-        <a class="navbutton" href="/km.html">Kahve Molası</a>
-        <a class="navbutton" href="/iletisim.html">İletişim</a>
-        <div style="display: flex; align-items: center;">
-        <a class="navbutton" href="/en" style="position: absolute; right:0" >English</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+        <div class="container-fluid">
+        <a href="/"><img src="Images/kahveciblack.png" style="height: max(2vmin,20px); width: auto;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link active" href="avukatlar.html">Avukatlarımız</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://kahvecimicromoon.wordpress.com">Makaleler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="km.html">Kahve Molası</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iletisim.html">İletişim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/en">English</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="border"></div>
     </nav>
-    <div class="topnav">
-        <a href="/" class="active"><img src="/Images/kahveciblack.png" style="max-height: 2vh; width: auto;"></a>
-        <div id="myLinks">
-          <a href="/avukatlar.html">Avukatlarımız</a>
-          <a href="/km.html">Kahve Molası</a>
-          <a href="/iletisim.html">İletişim</a>
-        </div>
-        <div style="display: flex; justify-content: center; align-items: center;">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <img src="/Images/home.png" style="height: 2vh; width: auto;">
-          <i></i>
-        </a>
-    </div>
-      </div>
-    <script src="/js/nav.js"></script>
     <div style="height:10vh; width:100%; clear:both;"></div>
     <div style="display: flex; flex-wrap: wrap; align-items: center;">
         <img src="/Avukatlar/vk.png" style="margin-left: 2vw; height: 80%; align-self: center; border-radius: 10px;">
@@ -54,10 +57,11 @@
 
     </div>
     </div>
-    <footer style="background-color: black;">
-        <h2 style="color: white; font-size: 15px;">© Kahveci Avukatlık Bürosu</h2>
-        <div style="width:2vmin; clear:both;"></div>
-            </footer>
+    <img src="/Images/kahvecibottom.png" style="position: fixed; right: 0; width: 20vmin; bottom: 2vh; z-index: 0;" id="bottomk">
+            <footer>
+                <h2 style="color: white; font-size: min(1.5vmin, 1.5vmax);">© Kahveci Avukatlık Bürosu</h2>
+                <div style="width:2vmin; clear:both;"></div>
+                    </footer>
       </body>
     
     

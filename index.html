@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.5">
@@ -12,49 +14,56 @@
     <title>Kahveci Avukatlık Bürosu</title>
 </head>
 <body style="margin: 0;">
-    <nav>
-        <a href="/"><img src="Images/kahveciblack.png" style="max-height: 2vh; width: auto;"></a>
-        <a class="navbutton" href="avukatlar.html">Avukatlarımız</a>
-        <a class="navbutton" href="https://kahvecimicromoon.wordpress.com">Makaleler</a>
-        <a class="navbutton" href="km.html">Kahve Molası</a>
-        <a class="navbutton" href="iletisim.html">İletişim</a>
-        <div style="display: flex; align-items: center;">
-        <a class="navbutton" href="/en" style="position: absolute; right:0" >English</a>
-        </div>
-        <div id="border"></div>
-    </nav>
-    <div class="topnav">
-        <a href="/" class="active"><img src="Images/kahveciblack.png" style="max-height: 2vh; width: auto;"></a>
-        <div id="myLinks">
-          <a href="avukatlar.html">Avukatlarımız</a>
-          <a href="km.html">Kahve Molası</a>
-          <a href="iletisim.html">İletişim</a>
-        </div>
-        <div style="display: flex; justify-content: center; align-items: center;">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="display: flex; justify-content: center; align-items: center;">
-            <img src="Images/home.png" style="height: 2vh; width: auto;">
-          <i></i>
-        </a>
+    <div id="toptop">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Change Language
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">🇹🇷 Türkçe</a></li>
+              <li><a class="dropdown-item" href="#">🇺🇸 English</a></li>
+            </ul>
+          </div>
     </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+        <div class="container-fluid">
+        <a href="/"><img src="Images/kahveciblack.png" style="height: max(2vmin,20px); width: auto;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="avukatlar.html">Avukatlarımız</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://kahvecimicromoon.wordpress.com">Makaleler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="km.html">Kahve Molası</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iletisim.html">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Images/slide3.png" class="d-block w-100" alt="1">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/slide2.jpg" class="d-block w-100" alt="2">
+          </div>
+        </div>
+        <div style="width: 100%; background-color:rgba(55, 55, 55, 0.603); position: absolute; height: 5vh; display: flex; align-items: center; top: 30vh; max-height: 5vh;">
+            <h1 style="font-family: 'DM Serif Display', serif; color: white; margin-left: 2vw; font-size: min(2vmax, 30px); font-weight: 700;">Kahveci Avukatlık Bürosu</h1>
+        </div>
       </div>
-    <script src="/js/nav.js"></script>
-        <div class="page-content" style="display: flex; flex-wrap:wrap; justify-content:center; position: relative;">
-            <div class="slideshow-container" ">
-    
-                <div class="mySlides w3-animate-fading" style="transition: 1s;">
-                  <img class="slideimg" src="Images/slide3.png" style="width:100vw; height: 25vh; max-width: 500vw; object-fit: cover;">
-                </div>
-              
-                <div class="mySlides w3-animate-fading" style="transition: 1s;">
-                  <img class="slideimg" src="Images/slide4.png" style="width:100vw; height: 25vh; max-width: 500vw; object-fit: cover;">
-                </div>
-              </div>
-              <br>
-            <script src="js/slide1.js"></script>
-            <div style="width: 100%; background-color:rgba(55, 55, 55, 0.603); position: absolute; height: 5vh; display: flex; align-items: center; top: 20vh; max-height: 5vh;">
-                <h1 style="font-family: 'DM Serif Display', serif; color: white; margin-left: 2vw; font-size: min(2vmax, 30px);">Kahveci Avukatlık Bürosu</h1>
-            </div>
-            </div>
+    </div>
             <div style="margin-left: 2vw;">
             <div id="bdiv">
             <div class="homebutton"><p>Hakkımızda</p></div>
@@ -63,10 +72,10 @@
             <div class="homebutton"><p>İletişim</p></div>
         </div>
             </div>
-            <img src="/Images/kahvecibottom.png" style="position: fixed; right: 0; width: 20vmin; bottom: 2vh; z-index: 0;">
-            <footer style="background-color: black;">
-                <h2 style="color: white; font-size: min(1.5vmin, 1.5vmax);">© Kahveci Avukatlık Bürosu</h2>
-                <div style="width:2vmin; clear:both;"></div>
+            <img src="/Images/kahvecibottom.png" style="position: fixed; right: 0; width: 20vmin; bottom: 2vh; z-index: 0;" id="bottomk">
+            <footer>
+                <a href="/gizlilik" style="text-decoration: none;"><h2 style="color: white; font-size: 1vmin;">Gizlilik Politikası</h2></a>
+                <h2 style="color: white; font-size: 1vmin;">©2023 Kahveci Avukatlık Bürosu</h2>
                     </footer>
                     
 </html>
