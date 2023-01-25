@@ -13,7 +13,7 @@
 </head>
 <body style="margin: 0;">
     <nav>
-        <a href="/"><img src="Images/kahveciwhite.png" style="max-height: 2vh; width: auto;"></a>
+        <a href="/"><img src="Images/kahveciblack.png" style="max-height: 2vh; width: auto;"></a>
         <a class="navbutton" href="avukatlar.html">Avukatlarımız</a>
         <a class="navbutton" href="https://kahvecimicromoon.wordpress.com">Makaleler</a>
         <a class="navbutton" href="km.html">Kahve Molası</a>
@@ -21,35 +21,36 @@
         <div style="display: flex; align-items: center;">
         <a class="navbutton" href="/en" style="position: absolute; right:0" >English</a>
         </div>
+        <div id="border"></div>
     </nav>
         <div class="page-content" style="display: flex; flex-wrap:wrap; justify-content:center; position: relative;">
-            <div class="slideshow-container">
+            <div class="slideshow-container" ">
     
-                <div class="mySlides w3-animate-fading">
-                  <img class="slideimg" src="Images/slide1.jpg" style="width:auto; height: 60vh; max-width: 500vw;">
+                <div class="mySlides w3-animate-fading" style="transition: 1s;">
+                  <img class="slideimg" src="Images/slide3.png" style="width:100vw; height: 25vh; max-width: 500vw; object-fit: cover;">
                 </div>
               
-                <div class="mySlides w3-animate-fading">
-                  <img class="slideimg" src="Images/slide2.jpg" style="width:auto; height: 60vh; max-width: 500vw;">
+                <div class="mySlides w3-animate-fading" style="transition: 1s;">
+                  <img class="slideimg" src="Images/slide4.png" style="width:100vw; height: 25vh; max-width: 500vw; object-fit: cover;">
                 </div>
               </div>
               <br>
             <script src="js/slide1.js"></script>
-            <div style="width: 100%; background-color:rgba(55, 55, 55, 0.603); position: absolute; height: 5vh; display: flex; align-items: center; top: 55vh; max-height: 5vh;">
-                <h1 style="font-family: 'DM Serif Display', serif; color: white; margin-left: 2vw; font-size: 2vmax;">Kahveci Avukatlık Bürosu | Levent, Istanbul</h1>
+            <div style="width: 100%; background-color:rgba(55, 55, 55, 0.603); position: absolute; height: 5vh; display: flex; align-items: center; top: 20vh; max-height: 5vh;">
+                <h1 style="font-family: 'DM Serif Display', serif; color: white; margin-left: 2vw; font-size: min(2vmax, 30px);">Kahveci Avukatlık Bürosu</h1>
             </div>
             </div>
             <div style="margin-left: 2vw;">
-            <h1 style="font-family: 'DM Serif Display', serif; color: white; font-size: min(2.5vmin) max(20vmin);">Hakkımızda</h1>
-            <p style="color: white; font-family: 'Source Sans Pro', sans-serif; font-size: min(1.2vmin) max(12vmin);">Kahveci Avukatlık Bürosu 1983 yılında Av. Arb. Vehbi Kahveci tarafından kurulmuştur. 1983 yılından bugüne uzman kadrosuyla gerek yerli gerek yabancı şahıs ve şirketlere en iyi şekilde hizmet vermeyi amaçlamaktadır. Kahveci Avukatlık Bürosu avukatları en az bir yabacı dile iyi şekilde hâkim olup müvekkillerine Türkçe ve İngilizce dillerinde avukatlık ve danışmanlık hizmeti vermektedirler.
- 
-                Kahveci Avukatlık Bürosu merkez ofiste birlikte çalıştığı avukatlar yanında ayrıca daha önce Kahveci' de yetişmiş avukatların kurduğu bürolarla işbirliği içinde de çalışmaktadır.
-                 
-                Bunun yanında Ticaret Hukuku, Sözleşmeler Hukuku, Şirketler Hukuku gibi alanlarda konusunda uzman akademisyen ve hukukçuların da desteği alınarak her türlü hukuki hizmetin en iyi şekilde sunulmasına gayret edilmektedir.
-                 
-                Kahveci Avukatlık Bürosu avukatları müvekkil çıkarlarını en üst seviyede gözeterek ve sır saklama prensiplerine içtenlikle bağlı kalarak, ihtiyaç duyulan her konuda hukuki yardım ve danışmanlık hizmeti sağlamakta, müvekkillerini her türlü adli ve idari merciler nezdinde temsil etmektedirler.</p>
+            <div id="bdiv">
+            <div class="homebutton"><p>Hakkımızda</p></div>
+            <div class="homebutton"><p>Avukatlarımız</p></div>
+            <div class="homebutton"><p>Kahve Molası</p></div>
+            <div class="homebutton"><p>İletişim</p></div>
+        </div>
             </div>
+            <img src="/Images/kahvecibottom.png" style="position: fixed; right: 0; width: 20vmin; bottom: 2vh; z-index: 0;">
             <footer style="background-color: black;">
-                <h2 style="color: white; font-size: 15px;">© Kahveci Avukatlık Bürosu</h2>
+                <h2 style="color: white; font-size: min(1.5vmin, 1.5vmax);">© Kahveci Avukatlık Bürosu</h2>
+                <div style="width:2vmin; clear:both;"></div>
                     </footer>
 </html>
