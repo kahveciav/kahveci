@@ -170,9 +170,5 @@ iframe::-webkit-scrollbar {
 iframe {
   scrollbar-width: none;
 }
-@media (max-width:960px) {
-  .clear {
-    height: 150vh;
-  }
-}
+
   
